@@ -1,0 +1,16 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title style="text-align:center;">CHECK TASK STATUS</ion-title>
+		<button style="float:right; background-color:#5f50e1; margin-top: -25px;" danger (click) = "navHandler(exitbutton.navtoid)">{{exitbutton.id}}</button>
+	</ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<ion-grid>
+		<ion-row *ngFor="let item of items">
+			<ion-col *ngIf="item.type === 'button'" style="text-align:center;">
+				<button style="background-color:#5f50e1; margin-top: 50px;" Large danger (click) = "navHandler(item.navtoid)">{{item.Buttontext}}</button>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+</ion-content>

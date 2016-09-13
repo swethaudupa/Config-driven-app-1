@@ -1,0 +1,82 @@
+{
+    "loginpage": [
+        {
+            "type": "textbox",
+            "id": "Username",
+            "textType": "text",
+            "defaultvalue": "username"
+        },
+        {
+            "type": "textbox",
+            "id": "Password",
+            "textType": "password",
+            "defaultvalue": "password"
+        },
+        {
+            "type": "button",
+            "id": "submitlogin",
+            "Buttontext": "Login",
+            "navtoid": "changeToSecondPage"
+        }
+    ],
+
+    "usermanagement": {
+        "buttons": [
+            {
+                "type": "button",
+                "id": "addusers",
+                "Buttontext": "Add users",
+                "navtoid": "changeToFourthPage"
+            },
+            {
+                "type": "button",
+                "id": "editusers",
+                "Buttontext": "Edit user information",
+                "navtoid": "changeToFourthPage"
+            },
+            {
+                "type": "button",
+                "id": "taskstatus",
+                "Buttontext": "Check task status",
+                "navtoid": "changeToThirdPage"
+            }
+        ],
+        "exitbutton": {
+            "type": "button",
+            "id": "exit",
+            "Buttontext": "Exit",
+            "navtoid": "changeToFifthPage"
+        }
+    },
+
+    "addAndeditusers": {
+        "type": "content to be added soon"
+    },
+    
+    "checktaskstatus": {
+        "buttons": [
+          {
+              "type": "button",
+              "id": "completedtasks",
+              "Buttontext": "Completed",
+              "navtoid": "changeToFourthPage"
+          },
+          {
+              "type": "button",
+              "id": "pendingtasks",
+              "Buttontext": "Pending",
+              "navtoid": "changeToFourthPage"
+          }
+        ],     
+         "exitbutton": {
+              "type": "button",
+              "id": "exit",
+              "Buttontext": "Exit",
+              "navtoid": "changeToFifthPage"
+        }
+    },
+
+    "exit": {
+        "text": "Thanks for dropping by!"
+    }
+}

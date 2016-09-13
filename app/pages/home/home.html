@@ -1,0 +1,10 @@
+<ion-content>
+	<ion-label *ngFor="let item of items">
+		<ion-item *ngIf="item.type === 'textbox'">
+			<ion-input placeholder="{{item.id}}" type="{{item.textType}}"></ion-input>
+		</ion-item>
+		<ion-item no-lines *ngIf="item.type === 'button'">
+			<button style="background-color:#5f50e1;" large block danger (click)="navHandler(item.navtoid)">{{item.Buttontext}}</button>
+		</ion-item>
+	</ion-label>
+</ion-content>
